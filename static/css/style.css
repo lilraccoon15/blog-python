@@ -1,0 +1,190 @@
+
+body {
+  background-color: #F7F2EE;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #AE887B;
+}
+
+h1, h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+h1 {
+  color: #90A678;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #4F3E38;
+  text-align: right;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+header, footer {
+  background-color: #D9BFB2;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+}
+
+header {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 130px;
+  align-items: center;
+  height: 100px;
+}
+header nav {
+  width: 50%;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  width: 20%;
+  text-align: center;
+}
+header nav ul li a {
+  color: #4F3E38;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+header nav ul li a:hover {
+  color: #AE887B;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+footer a {
+  font-family: "Oswald", sans-serif;
+  color: #915D5A;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+footer a:hover {
+  color: #AE887B;
+}
+footer p {
+  text-align: center;
+}
+
+main {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #F7F2EE;
+  font-family: "Open Sans", sans-serif;
+}
+main .container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+main .container section {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .container section article {
+  width: 45%;
+  text-align: justify;
+}
+main .container section article .entete {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: middle;
+}
+main .container section article .entete a {
+  width: 60%;
+}
+main .container section article .entete .date {
+  font-weight: bold;
+  font-family: courier, courier new, serif;
+  color: #90A678;
+}
+main .container section article .entete .float {
+  width: 40%;
+  text-align: right;
+}
+main .container section article .number {
+  font-family: "Abril Fatface", cursive;
+  color: #AE887B;
+  font-size: 6rem;
+  float: left;
+  padding: 0px 20px;
+  line-height: 7rem;
+}
+main .container section article .auteurs {
+  color: #90A678;
+  font-weight: bold;
+}
+main .container section article .categories {
+  color: #AE887B;
+  font-weight: bold;
+}
+main .container section article .floatRight {
+  float: right;
+}
+main .container .bubble {
+  position: sticky;
+  top: 20px;
+}
+main .container .bubble .search {
+  margin-bottom: 20px;
+}
+main .container .bubble .search input {
+  width: 80%;
+  padding: 10px;
+  background-color: #FCFAED;
+  border: 1px solid #C3C1AC;
+  position: relative;
+}
+main .container .bubble .search button {
+  padding: 10px;
+  background-color: #90A678;
+  border: 1px solid #5E5946;
+  color: white;
+  cursor: pointer;
+}
+main .container .bubble .search #deroulant {
+  background-color: #FCFAED;
+  width: 85%;
+  position: absolute;
+  left: 0%;
+  top: 38px;
+}
+
+.title {
+  font-family: "Abril Fatface", cursive;
+  font-size: 4rem;
+  color: #915D5A;
+  text-transform: lowercase;
+}
+
+/*# sourceMappingURL=style.css.map */

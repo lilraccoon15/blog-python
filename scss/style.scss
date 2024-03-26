@@ -1,0 +1,225 @@
+/*# sourceMappingURL=style.css.map */
+
+$background:#F7F2EE;
+$background-light: #FCFAED;
+$border: #C3C1AC;
+$border2:#5E5946;
+$secondary:#D9BFB2;
+$primary:#915D5A;
+$dark:#4F3E38;
+$links:#AE887B;
+$green:#90A678;
+$white: #ffff;
+
+
+body {
+    background-color:$background;
+    margin:0px;
+}
+
+a {
+    text-decoration:none;
+    color:$links;
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.2rem;
+}
+
+h1 {
+    color:$green;
+}
+
+h2 {
+    font-weight:bold;
+    font-size:1rem;
+    color:$dark;
+    text-align:right;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+header, footer {
+    background-color:$secondary;
+    padding-left:100px;
+    padding-right:100px;
+    display:flex;
+}
+
+header {
+    flex-wrap:wrap;
+    justify-content:space-between;
+    height:130px;
+    align-items: center;
+    height:100px;
+
+    nav {
+        width:50%;
+
+        ul {
+            list-style-type:none;
+            display:flex;
+            justify-content:space-between;
+
+            li {
+                width:20%;
+                text-align:center;
+
+                a {
+                    color:$dark;
+                    font-family: 'Oswald', sans-serif;
+                    font-weight:bold;
+                    font-size:1rem;
+                    text-transform:uppercase;
+                    letter-spacing:.2rem;
+                }
+                
+                a:hover {
+                    color:$links;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    width:100%;
+    height:70px;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    align-content:center;
+
+    a {
+        font-family: 'Oswald', sans-serif;
+        color:$primary;
+        font-weight:bold;
+        font-size:1rem;
+        text-transform:uppercase;
+        letter-spacing:.2rem;
+    }
+
+    a:hover {
+        color:$links;
+    }
+
+    p {
+        text-align:center;
+    }
+}
+
+main {
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-left:100px;
+    padding-right:100px;
+    background-color:$background;
+    font-family: 'Open Sans', sans-serif;
+
+    .container {
+        display:flex;
+        flex-wrap:nowrap;
+        justify-content:space-between;
+        padding-bottom:60px;
+
+        section {
+            width:70%;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-between;
+
+            article {
+                width:45%;
+                text-align:justify;
+
+                .entete {
+                    display:flex;
+                    flex-wrap:nowrap;
+                    align-items:middle;
+
+                    a {
+                        width:60%;
+                    }
+
+                    .date {
+                        font-weight:bold;
+                        font-family:courier, courier new, serif;
+                        color: $green;
+                    }
+                    
+                    .float {
+                        width:40%;
+                        text-align:right;
+                    }
+                }
+
+                .number {
+                    font-family: 'Abril Fatface', cursive; 
+                    color:$links;
+                    font-size:6rem;
+                    float:left;
+                    padding:0px 20px;
+                    line-height:7rem;
+                }
+
+                .auteurs {
+                    color: $green;
+                    font-weight:bold;
+                }
+
+                .categories {
+                    color:$links;
+                    font-weight:bold;
+                }
+                
+                .floatRight {
+                    float:right;    
+                }
+            }
+        }
+
+        .bubble {
+            position: sticky;
+            top: 20px;
+
+            .search {
+                margin-bottom:20px;
+
+                input {
+                    width:80%;
+                    padding:10px;
+                    background-color:$background-light;
+                    border:1px solid $border;
+                    position:relative;
+                }
+
+                button {
+                    padding:10px;
+                    background-color:$green;
+                    border:1px solid $border2;
+                    color:$white;
+                    cursor:pointer;
+                }
+
+                #deroulant {
+                    background-color:$background-light;
+                    width:85%;
+                    position:absolute;
+                    left:0%;
+                    top:38px;
+                }
+            }
+        }
+    }
+}
+
+.title {
+    font-family: 'Abril Fatface', cursive;   
+    font-size: 4rem;
+    color:$primary;
+    text-transform:lowercase;
+}
